@@ -1,5 +1,6 @@
 // Connect Node to MySQL.
 var mysql = require("mysql");
+require("dotenv").config();
 
 if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL);
@@ -7,7 +8,7 @@ if (process.env.JAWSDB_URL) {
   connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Colton24!",
+    password: process.env.mySqlPW,
     database: "burgers_db",
   });
 }
