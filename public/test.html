@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/burger_style.css"
+      type="text/css"
+    />
+    <!-- Latest compiled and minified CSS & JS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="/assets/js/burger.js"></script>
+    <title>Burger App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Eat the Burger</h1>
+        <p>Make burgers, eat burgers.</p>
+        <br />
+        <h2>Make a Burger</h2>
+        <form class="create-form">
+          <div class="form-group">
+            <label for="newburger">New Burger:</label>
+            <input type="text" id="newburger" name="burger" />
+          </div>
+          <button type="submit">Add Burger</button>
+        </form>
+      </div>
+      <!-- /jumbotron -->
+
+      <div class="row">
+        <!-- Undevoured Burgers -->
+        <div class="col-lg-6">
+          <ul>
+            <!-- {{#each burgers}} -->
+            <p><span class="label">ID:</span> {{this.id}}</p>
+            <p><span class="label">Burger:</span> {{this.burger_name}}</p>
+            <button
+              class="eatburger"
+              data-id="{{this.id}}"
+              data-newDevoured="{{devour}}"
+            >
+              Eat the burger
+            </button>
+            <!-- {{/each}} -->
+          </ul>
+        </div>
+        <!-- Devoured Burgers -->
+        <div class="col-lg-6"></div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </body>
+</html>
