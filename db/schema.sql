@@ -1,8 +1,8 @@
-CREATE DATABASE burgers_db;
-USE burgers_db;
+CREATE DATABASE rentals;
+USE rentals_db;
 
 -- Create the table burgers.
-CREATE TABLE burgers
+CREATE TABLE bikes
 (
     id INT NOT NULL AUTO_INCREMENT,
     burger_name VARCHAR(50) NOT NULL,
