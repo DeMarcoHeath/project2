@@ -10,7 +10,7 @@ $(function () {
     };
 
     // Send the POST request.
-    $.ajax("/api/rentals", {
+    $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger,
     }).then(function () {
@@ -29,7 +29,7 @@ $(function () {
     };
 
     // Send the PUT request.
-    $.ajax("/api/rentals/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: devouredState,
     }).then(function () {
@@ -46,7 +46,7 @@ $(function () {
     // Send the DELETE request.
     $.ajax({
       type: "DELETE",
-      url: "/api/rentals/" + id,
+      url: "/api/burgers/" + id,
     }).then(location.reload());
   });
 });

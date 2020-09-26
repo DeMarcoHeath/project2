@@ -8,7 +8,7 @@ $(document).on("click", ".burgerButtons", (event) => {
     devoured: devouredState,
   };
 
-  $.ajax("/api/rentals/" + id, {
+  $.ajax("/api/burgers/" + id, {
     type: "PUT",
     data: newDevouredState,
   }).then(function () {
@@ -24,7 +24,7 @@ $(".create-form").on("submit", function (event) {
     devoured: $("[name=devoured]:checked").val().trim(),
   };
 
-  $.ajax("/api/rentals", {
+  $.ajax("/api/burgers", {
     type: "POST",
     data: newBurger,
   }).then(function () {
@@ -35,7 +35,7 @@ $(".create-form").on("submit", function (event) {
 $(".deleteBurger").on("click", function (event) {
   var id = $(this).data("id");
 
-  $.ajax("/api/rentals/" + id, {
+  $.ajax("/api/burgers/" + id, {
     type: "DELETE",
   }).then(function () {
     location.reload();
