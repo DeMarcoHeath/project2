@@ -30,4 +30,4 @@ var bike = {
 };
 
 // Export at the end of the bike.js file.
-module.exports = rentals;
+module.exports = bike;
