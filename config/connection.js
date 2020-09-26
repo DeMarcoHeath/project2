@@ -10,6 +10,7 @@ if (process.env.JAWSDB_URL) {
     user: "root",
     password: process.env.mySqlPW,
     database: "rentals_db",
+
   });
 }
 
