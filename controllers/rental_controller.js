@@ -15,8 +15,8 @@ router.get("/", function (req, res) {
 
 router.post("/api/rentals", function (req, res) {
   rental.insertOne(
-    ["burger_name", "devoured"],
-    [req.body.burger_name, req.body.devoured],
+    ["bike_name", "rented"],
+    [req.body.bike_name, req.body.rented],
     function (result) {
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
@@ -32,7 +32,7 @@ router.put("/api/rentals/:id", function (req, res) {
 
   rental.updateOne(
     {
-      devoured: req.body.devoured,
+      rented: req.body.rented,
     },
     condition,
     function (result) {
