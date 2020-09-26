@@ -1,12 +1,12 @@
 body {
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  background-color: black;
+  background-color: rgb(77, 96, 206);
 }
 
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  background: #d7e9fa;
   color: black;
 }
 
