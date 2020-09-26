@@ -1,4 +1,4 @@
-CREATE DATABASE rentals;
+CREATE DATABASE rentals_db;
 USE rentals_db;
 
 -- Create the table burgers.
