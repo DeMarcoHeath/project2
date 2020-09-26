@@ -9,7 +9,8 @@ if (process.env.JAWSDB_URL) {
     host: "localhost",
     user: "root",
     password: process.env.mySqlPW,
-    database: "burgers_db",
+    database: "rentals_db",
+
   });
 }
 
