@@ -1,14 +1,12 @@
-
 .jumbotron {
   background-image: url("/assets/img/background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   margin-top: 10px;
 }
 
 .jumbotron > h1 {
-  font-family: 'Carter One', cursive;
+  font-family: "Carter One", cursive;
 }
 
 #newburger {
@@ -34,6 +32,6 @@
 #righthead {
   background-color: #26ccd7;
   color: white;
-  text-align: center;
+
   font-size: 1.2em;
 }

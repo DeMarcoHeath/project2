@@ -11,6 +11,8 @@ app.use(express.static("public"));
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static("assets/img"));
+
 // parse application/json
 app.use(bodyParser.json());
 
