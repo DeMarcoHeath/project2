@@ -1,5 +1,5 @@
 -- Select the burgers_db
 USE rentals_db;
 -- Insert new rows of data.
-INSERT INTO burgers (burger_name, devoured)
-VALUES ("hamburger", false), ("cheeseburger", false), ("tofu burger", false);
+INSERT INTO bikes (bike_name, devoured)
+VALUES ("schwinn", false), ("bmx", false), ("dirt bike", false);
