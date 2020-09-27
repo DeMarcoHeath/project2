@@ -23,7 +23,6 @@ function objToSql(ob) {
         value = "'" + value + "'";
       }
       // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
       arr.push(key + "=" + value);
     }
   }
@@ -32,7 +31,7 @@ function objToSql(ob) {
 }
 
 var orm = {
-  // Display all burgers in the db.
+  // Display all bikes in the db.
   selectAll: function (table, cb) {
     var queryString = "SELECT * FROM " + table + ";";
 
@@ -43,7 +42,7 @@ var orm = {
       cb(result);
     });
   },
-  // Add a burger to the db.
+  // Add a bike to the db.
   insertOne: function (table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
     queryString += " (";
@@ -62,7 +61,7 @@ var orm = {
       cb(result);
     });
   },
-  // Set burger devoured status to true.
+  // Set bike rented status to true.
   updateOne: function (table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
     queryString += " SET ";
@@ -79,7 +78,7 @@ var orm = {
       cb(result);
     });
   },
-  // Delete a burger from the db.
+  // Delete a bike from the db.
   deleteOne: function (table, condition, cb) {
     var queryString = "DELETE FROM " + table;
     queryString += " WHERE ";

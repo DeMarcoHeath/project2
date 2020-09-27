@@ -9,7 +9,7 @@
   font-family: "Carter One", cursive;
 }
 
-#newburger {
+#newbike {
   border-radius: 5px;
 }
 
@@ -24,8 +24,8 @@
   font-size: 1.2em;
 }
 
-#eatbutton,
-#trashbutton {
+#rentbutton,
+#returnbutton {
   float: right;
 }
 

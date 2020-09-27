@@ -5,7 +5,10 @@ USE rentals_db;
 CREATE TABLE bikes
 (
     id INT NOT NULL AUTO_INCREMENT,
-    burger_name VARCHAR(50) NOT NULL,
-    devoured BOOLEAN DEFAULT false,
+    bike_name VARCHAR(50) NOT NULL,
+    rented BOOLEAN DEFAULT false,
     PRIMARY KEY (id)
 );
+
+select * from bikes;
+

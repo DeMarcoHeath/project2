@@ -29,5 +29,5 @@ var bike = {
   },
 };
 
-// Export at the end of the bike.js file.
+// Export at the end of the rentals.js file.
 module.exports = bike;
