@@ -8,6 +8,10 @@ As a community minded person with a bike, I want to help others by allowing them
 As a person who needs a bike but doesn’t have one, I want 
 to borrow a bike and return it when I’m done.
 
+![Screenshot of application](public\assets\img\appscreenshot.JPG)
+
+Link to application:(https://sheltered-temple-43461.herokuapp.com/ )
+
 ## Technologies used
 
 * JavaScript
