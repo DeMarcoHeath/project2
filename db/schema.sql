@@ -10,5 +10,5 @@ CREATE TABLE bikes
     PRIMARY KEY (id)
 );
 
-select * from bikes;
+
 
